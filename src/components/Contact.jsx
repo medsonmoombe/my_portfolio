@@ -70,69 +70,84 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <motion.form
-  initial={{ opacity: 0, x: 100 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ delay: 1, duration: 0.6 }}
-  action="https://formspree.io/f/xnqwbvpv"
-  method="post"
-  className="flex flex-col w-full max-w-md bg-black-100 rounded p-4 m-auto"
->
-  <h1 className="text-3xl font-bold text-[#915EFF] mb-4">Let's Talk</h1>
-  <p className="text-white text-lg mb-4">
-    I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-  </p>
-  <div className="mb-4">
-    <label htmlFor="name" className="text-white text-sm font-semibold mb-1 block">Name</label>
-    <input
-      type="text"
-      name="name"
-      id="name"
-      placeholder="Your Name"
-      className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
-      required
-    />
-  </div>
-  <div className="mb-4">
-    <label htmlFor="email" className="text-white text-sm font-semibold mb-1 block">Email</label>
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="Your Email"
-      className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
-      required
-    />
-  </div>
-  <div className="mb-4">
-    <label htmlFor="message" className="text-white text-sm font-semibold mb-1 block">Message</label>
-    <textarea
-      className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
-      id="message"
-      name="message"
-      placeholder="Your message here..."
-      rows="4"
-      required
-    ></textarea>
-  </div>
-  <button
-    type="submit"
-    className="bg-[#915EFF] px-8 py-3 cursor-pointer rounded-lg  text-white hover:bg-opacity-80 transition duration-300 ease-in-out"
-  >
-    Send Message
-  </button>
-</motion.form>
-
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1, duration: 0.6 }}
+          action="https://formspree.io/f/xnqwbvpv"
+          method="post"
+          className="flex flex-col w-full max-w-md bg-black-100 rounded p-4 m-auto"
+        >
+          <h1 className="text-3xl font-bold text-[#915EFF] mb-4">Let's Talk</h1>
+          <p className="text-white text-lg mb-4">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+          <div className="mb-4">
+            <label
+              htmlFor="name"
+              className="text-white text-sm font-semibold mb-1 block"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="email"
+              className="text-white text-sm font-semibold mb-1 block"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="message"
+              className="text-white text-sm font-semibold mb-1 block"
+            >
+              Message
+            </label>
+            <textarea
+              className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
+              id="message"
+              name="message"
+              placeholder="Your message here..."
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-[#915EFF] px-8 py-3 cursor-pointer rounded-lg  text-white hover:bg-opacity-80 transition duration-300 ease-in-out"
+          >
+            Send Message
+          </button>
+        </motion.form>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
