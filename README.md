@@ -1,19 +1,65 @@
-# Build and Deploy a Fantastic 3D Portfolio Website with Three.js and React.js
-![3D Portfolio](https://i.ibb.co/9ykhLtM/Thumbnail.png)
+# My portifolio
 
-## Introduction
-The most impressive websites in the world use 3D graphics and animations to bring their content to life. Learn how to build your own ThreeJS 3D Developer Portfolio today! 
 
-In this course, you'll learn the following:
-- ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model
-- React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React
-- TailwindCSS - a popular utility-first CSS styling framework
-- Framer Motion - the most popular library used to bring your React website to life with animations
-You'll also learn how to:
-- Load, create and customize stunning 3D models and geometries with various lights, as well as understand the 3D world with a camera and positioning of an object in space.
-- Make your code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices
-- Implement sending emails through a form on the website
-- Ensure responsiveness across all devices and improve your site's performance using Suspense and Preload.
 
-## Stay up to date with new projects
-New major projects coming soon, subscribe to the mailing list to stay up to date https://jsmastery.pro
+
+## Built With
+
+- React
+- Tailwind
+- JAVASCRIPT
+
+## Live Demo (if available)
+[Live Demo Link]()
+
+
+
+## Getting Started
+
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- Web browser
+- Code editor
+
+### Setup
+
+
+```bash
+npm install
+```
+
+```bash
+npm build
+```
+
+```bash
+npm run dev
+```
+
+
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@medsonmoombe](https://github.com/medsonmoombe)
+- Twitter: [@emmanue78388405](https://twitter.com/@emmanue78388405)
+- LinkedIn: [@Emmanuel moombe](https://www.linkedin.com/in/emmanuel-moombe-821918230/)
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+
+## 📝 License
+
+This project is [MIT](https://github.com/medsonmoombe/my_portfolio/blob/main/LICENSE) licensed.
+
+## 🤝 Contributing
