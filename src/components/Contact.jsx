@@ -75,52 +75,59 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
+        <motion.form
+  initial={{ opacity: 0, x: 100 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ delay: 1, duration: 0.6 }}
+  action="https://formspree.io/f/xnqwbvpv"
+  method="post"
+  className="flex flex-col w-full max-w-md bg-black-100 rounded p-4 m-auto"
+>
+  <h1 className="text-3xl font-bold text-[#915EFF] mb-4">Let's Talk</h1>
+  <p className="text-white text-lg mb-4">
+    I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+  </p>
+  <div className="mb-4">
+    <label htmlFor="name" className="text-white text-sm font-semibold mb-1 block">Name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Your Name"
+      className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
+      required
+    />
+  </div>
+  <div className="mb-4">
+    <label htmlFor="email" className="text-white text-sm font-semibold mb-1 block">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Your Email"
+      className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
+      required
+    />
+  </div>
+  <div className="mb-4">
+    <label htmlFor="message" className="text-white text-sm font-semibold mb-1 block">Message</label>
+    <textarea
+      className="w-full p-2 rounded border-2 border-[#915EFF] focus:border-cyan-700 focus:outline-none"
+      id="message"
+      name="message"
+      placeholder="Your message here..."
+      rows="4"
+      required
+    ></textarea>
+  </div>
+  <button
+    type="submit"
+    className="bg-[#915EFF] px-8 py-3 cursor-pointer rounded-lg  text-white hover:bg-opacity-80 transition duration-300 ease-in-out"
+  >
+    Send Message
+  </button>
+</motion.form>
 
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
       </motion.div>
 
       <motion.div

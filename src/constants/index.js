@@ -15,15 +15,16 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
+import microverse from "../assets/company/microverse.png"
+import self from "../assets/company/self.png"
+import ruby from "../assets/tech/ruby.png"
+import sql from "../assets/tech/sql.png"
 
 export const navLinks = [
   {
@@ -42,20 +43,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Responsive Design",
+    desc:"Passionate about responsive web design for cross-platform compatibility using mobile-first approach and desktop media queries",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Reusable & Minimal code",
+    desc:"Efficient coding using CSS Variables, custom utility classes, and reusable components for future use.",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Great UI/UX",
+    desc: "I prioritize simplicity and accessibility in design, and can accurately translate templates into code that is visually flawless and user-friendly.",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -97,72 +97,42 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Ruby",
+    icon: ruby,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "sql",
+    icon: sql,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Mentor(Volunteer)",
+    company_name: "Microverse",
+    icon: microverse,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2022 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Mentored junior web developers through code reviews and pairing sessions",
+      "Improved their understanding of front-end and back-end technologies and best practices",
+      "Proposed improvements to code organization to improve code quality and overall performance.",
+      "Provided advice and tips on how to maintain motivation to maintain longevity in the program.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Self",
+    icon: self,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2021 - present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developed and maintained several personal projects using React, Redux, Ruby, Tailwind CSS, and Firebase/PostgreSQL below are some",
+      "Collaborated with cross-functional teams to build and deploy applications using Ruby on Rails, Node js Typescript and React. Maintained a high level of code quality and ensured scalability and security.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -198,16 +168,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Doctor reservation",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This application is used to book an appointment with prominent Doctors around the world, all you need to do is login, then book a reservation.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Ruby on rails",
         color: "green-text-gradient",
       },
       {
@@ -216,19 +186,20 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/medsonmoombe/Reserve-doctor-front-end",
+    link: "https://63c6cb03c109d258d1ef70c9--flourishing-mochi-f95866.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "eshop",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A website which allows users to shop online, save to cart and later purchases.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
@@ -237,28 +208,30 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/medsonmoombe/e-shopping",
+    link:"https://sunny-syrniki-a48a54.netlify.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Recipe App",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "Ruby",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Ruby on rails",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Bootstrap",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/medsonmoombe/Recipee_app",
+    link: "https://my-recipe-app-2uff.onrender.com/"
   },
 ];
 
