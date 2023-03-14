@@ -16,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  link
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -52,7 +53,7 @@ const ProjectCard = ({
               <img
                 src={code}
                 alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-1/2 h-1/2 object-contain bg-[#915EFF] rounded-full'
               /> 
             </div>
           </div>
