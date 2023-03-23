@@ -55,6 +55,7 @@ npm run dev
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+js mastery design tutorial
 
 - Hat tip to anyone whose code was used
 
