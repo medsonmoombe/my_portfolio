@@ -22,6 +22,7 @@ import {
   threejs,
   chatApp,
   blogApp,
+  jobPortal,
 } from "../assets";
 import microverse from "../assets/company/microverse.png"
 import self from "../assets/company/self.png"
