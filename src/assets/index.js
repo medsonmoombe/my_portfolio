@@ -30,6 +30,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./doc.png";
 import jobit from "./eshop.png";
 import tripguide from "./recipe_ap.png";
+import blogApp from "./BLOGAPP.png";
+import chatApp from './chattyApp.png';
+import jobPortal from './jobPotal.png';
 
 export {
   logo,
@@ -61,4 +64,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  blogApp,
+  chatApp,
+  jobPortal
 };

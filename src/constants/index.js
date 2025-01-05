@@ -20,6 +20,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  chatApp,
+  blogApp,
 } from "../assets";
 import microverse from "../assets/company/microverse.png"
 import self from "../assets/company/self.png"
@@ -166,72 +168,84 @@ const testimonials = [
   },
 ];
 
+// blogApp,
+//   chatApp,
+//   jobPortal
+
 const projects = [
   {
-    name: "Doctor reservation",
+    name: "Chatty App",
     description:
-      "This application is used to book an appointment with prominent Doctors around the world, all you need to do is login, then book a reservation.",
+      "A real-time messaging web app that allows users to send and receive messages in real-time.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "Ruby on rails",
+        name: "Node js",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "socket.io",
+        color: "blue-text-gradient",
+      }
     ],
-    image: carrent,
-    source_code_link: "https://github.com/medsonmoombe/Reserve-doctor-front-end",
-    link: "https://63c6cb03c109d258d1ef70c9--flourishing-mochi-f95866.netlify.app/",
+    image: chatApp,
+    source_code_link: "https://github.com/medsonmoombe/chat-app-1.git",
+    link: "https://chat-app-1-1-5idi.onrender.com/login",
   },
   {
-    name: "eshop",
+    name: "Personal Blog App",
     description:
-      "A website which allows users to shop online, save to cart and later purchases.",
+      "A personal blog app that allows users Admin to create, edit, and delete blog posts.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
+        name:'Node js',
+        color: "green-text-gradient",
+      },
+      {
         name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind css",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/medsonmoombe/e-shopping",
-    link:"https://sunny-syrniki-a48a54.netlify.app/",
+    image: blogApp,
+    source_code_link: "https://github.com/medsonmoombe/blog-app",
+    link:"https://blog-app-rt3p.onrender.com",
   },
   {
-    name: "Recipe App",
+    name: "Job Portal",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A job portal web app that allows users to search for jobs and apply for them.",
     tags: [
       {
-        name: "Ruby",
+        name: "react js",
         color: "blue-text-gradient",
       },
       {
-        name: "Ruby on rails",
+        name: "Node js",
         color: "green-text-gradient",
       },
       {
-        name: "Bootstrap",
+        name: "tailwind css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/medsonmoombe/Recipee_app",
-    link: "https://my-recipe-app-2uff.onrender.com/"
+    image: jobPortal,
+    source_code_link: "https://github.com/medsonmoombe/jop-partal",
+    link: "https://job-client-dij9.vercel.app"
   },
 ];
 
