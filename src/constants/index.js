@@ -246,7 +246,7 @@ const projects = [
     ],
     image: jobPortal,
     source_code_link: "https://github.com/medsonmoombe/jop-partal",
-    link: "https://job-client-dij9.vercel.app"
+    link: "https://job-client-gt5w-6c2of8phg-emmanuel-moombes-projects.vercel.app/"
   },
 ];
 
