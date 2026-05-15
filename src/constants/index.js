@@ -24,8 +24,6 @@ import {
   blogApp,
   jobPortal,
 } from "../assets";
-import microverse from "../assets/company/microverse.png"
-import self from "../assets/company/self.png"
 import ruby from "../assets/tech/ruby.png"
 import sql from "../assets/tech/sql.png"
 
@@ -115,29 +113,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Mentor(Volunteer)",
-    company_name: "Microverse",
-    icon: microverse,
-    iconBg: "#383E56",
-    date: "March 2022 - Dec 2022",
+    title: "Full Stack Software Developer",
+    company_name: "CMOS Tech",
+    type: "Remote",
+    date: "Sept 2022 – June 2023",
     points: [
-      "Mentored junior web developers through code reviews and pairing sessions",
-      "Improved their understanding of front-end and back-end technologies and best practices",
-      "Proposed improvements to code organization to improve code quality and overall performance.",
-      "Provided advice and tips on how to maintain motivation to maintain longevity in the program.",
+      "Built complete web features connecting the user interface to the server and database.",
+      "Cleaned up and reorganized code to make the system faster and easier to work with.",
+      "Mentored the team and set clear technical direction, helping everyone work faster and stay motivated.",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Self",
-    icon: self,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - present",
+    title: "Frontend Software Developer",
+    company_name: "Bofrak POS",
+    type: "Remote",
+    date: "Jan 2024 – Nov 2024",
     points: [
-      "Developed and maintained several personal projects using React, Redux, Ruby, Tailwind CSS, and Firebase/PostgreSQL below are some",
-      "Collaborated with cross-functional teams to build and deploy applications using Ruby on Rails, Node js Typescript and React. Maintained a high level of code quality and ensured scalability and security.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Made React and Vue work smoothly together in a busy Point-of-Sale system.",
+      "Worked with a remote team to build features that met both design and technical requirements.",
+      "Helped teammates grow by teaching them better ways to build and structure web components.",
+    ],
+  },
+  {
+    title: "Frontend Software Developer",
+    company_name: "Chrilan Tech",
+    type: "On-site",
+    date: "Jan 2025 – July 2025",
+    points: [
+      "Built the foundation of web apps using React and Vue, keeping them fast and well-organized.",
+      "Turned detailed designs into clean, working code that's easy to maintain.",
+      "Led internal efforts to help the team level up their skills and work better with the back-end.",
     ],
   },
 ];
@@ -169,84 +174,78 @@ const testimonials = [
   },
 ];
 
-// blogApp,
-//   chatApp,
-//   jobPortal
-
 const projects = [
   {
-    name: "Chatty App",
+    name: "SkillPulse",
+    featured: true,
     description:
-      "A real-time messaging web app that allows users to send and receive messages in real-time.",
+      "A full-stack learning platform that pairs ambitious learners with verified experts using AI-powered matching. Features live video sessions with real-time collaboration tools (shared whiteboard, file sharing, chat), structured learning plans with progress tracking, topic-based community groups, and an expert knowledge feed. Role-based access for learners, experts, and admins — with a credit wallet system for booking paid sessions and notifications throughout.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "blue-text-gradient",
-      }
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "PostgreSQL", color: "green-text-gradient" },
+      { name: "LiveKit", color: "green-text-gradient" },
+      { name: "Drizzle ORM", color: "pink-text-gradient" },
+      { name: "Liveblocks", color: "pink-text-gradient" },
     ],
-    image: chatApp,
+    image: "/skillpulse.png",
+    source_code_link: "https://github.com/medsonmoombe/skillpulse",
+    link: "https://skillpulse-gules.vercel.app/",
+  },
+  {
+    name: "SaasForge",
+    featured: true,
+    description:
+      "A full project management platform for teams — create orgs, invite members, and manage work on a Kanban board with priorities, assignees, and due dates. Role-based access lets owners and admins control the workspace while members focus on tasks. Built-in notifications, a full activity timeline, and public read-only project links for clients round out a production-ready tool teams can actually rely on.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "PostgreSQL", color: "green-text-gradient" },
+    ],
+    image: "/saasforge.png",
+    source_code_link: "https://github.com/medsonmoombe/saasforge",
+    link: "https://saasforge-web.vercel.app/",
+  },
+  {
+    name: "Chatty — Real-Time Chat",
+    description:
+      "Full-stack messaging app supporting real-time bi-directional communication via Socket.io. Engineered a Node.js event system that handles concurrent connections cleanly, with a React frontend that updates instantly without page refreshes.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Socket.io", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+    ],
+    image: "/chattyApp.png",
     source_code_link: "https://github.com/medsonmoombe/chat-app-1.git",
     link: "https://chat-app-1-1-5idi.onrender.com/login",
   },
   {
-    name: "Personal Blog App",
+    name: "Blog CMS",
     description:
-      "A personal blog app that allows users Admin to create, edit, and delete blog posts.",
+      "A headless blog platform with a full admin CMS — create, edit, publish, and delete posts with rich text support. Firebase handles auth and storage, keeping infrastructure costs near zero while delivering a fast, reliable reading experience.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name:'Node js',
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind css",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
     ],
-    image: blogApp,
+    image: "/BLOGAPP.png",
     source_code_link: "https://github.com/medsonmoombe/blog-app",
-    link:"https://blog-app-rt3p.onrender.com",
+    link: "https://blog-app-rt3p.onrender.com",
   },
   {
     name: "Job Portal",
     description:
-      "A job portal web app that allows users to search for jobs and apply for them.",
+      "End-to-end job board connecting candidates and employers. Built a Node.js REST API with role-based access — separate flows for job seekers and recruiters — and a React frontend with filtered search, pagination, and application tracking.",
     tags: [
-      {
-        name: "react js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind css",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
     ],
-    image: jobPortal,
+    image: "/jobPotal.png",
     source_code_link: "https://github.com/medsonmoombe/jop-partal",
-    link: "https://job-client-gt5w-6c2of8phg-emmanuel-moombes-projects.vercel.app/"
+    link: "https://job-client-gt5w-6c2of8phg-emmanuel-moombes-projects.vercel.app/",
   },
 ];
 

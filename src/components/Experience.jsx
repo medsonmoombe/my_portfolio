@@ -1,85 +1,57 @@
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
-import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
-  return (
-    <VerticalTimelineElement
-      contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
-      }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
-      icon={
-        <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
-        </div>
-      }
-    >
-      <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
-      </div>
+const ExperienceCard = ({ experience, index }) => (
+  <motion.div
+    variants={fadeIn("up", "spring", index * 0.2, 0.6)}
+    className="relative pl-8 border-l-2 border-[#915EFF]/30 hover:border-[#915EFF] transition-colors duration-300 group"
+  >
+    {/* dot */}
+    <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-[#915EFF] ring-4 ring-[#050816] group-hover:scale-125 transition-transform duration-300" />
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
-    </VerticalTimelineElement>
-  );
-};
+    <div className="mb-1 flex flex-wrap items-center gap-3">
+      <span className="text-[11px] font-semibold tracking-widest uppercase text-[#915EFF] bg-[#915EFF]/10 px-3 py-1 rounded-full">
+        {experience.date}
+      </span>
+      <span className="text-[11px] font-medium tracking-widest uppercase text-gray-500">
+        {experience.type}
+      </span>
+    </div>
 
-const Experience = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
-        </h2>
-      </motion.div>
+    <h3 className="text-white text-[20px] font-bold leading-snug">
+      {experience.title}
+    </h3>
+    <p className="text-[#915EFF] text-[15px] font-semibold mb-4">
+      {experience.company_name}
+    </p>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
-          ))}
-        </VerticalTimeline>
-      </div>
-    </>
-  );
-};
+    <ul className="space-y-2">
+      {experience.points.map((point, i) => (
+        <li key={i} className="flex gap-2 text-gray-400 text-[14px] leading-relaxed">
+          <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#915EFF]/60 shrink-0" />
+          {point}
+        </li>
+      ))}
+    </ul>
+  </motion.div>
+);
+
+const Experience = () => (
+  <>
+    <motion.div variants={textVariant()}>
+      <p className={`${styles.sectionSubText}`}>Where I've worked</p>
+      <h2 className={`${styles.sectionHeadText}`}>Experience.</h2>
+    </motion.div>
+
+    <div className="mt-16 grid md:grid-cols-2 gap-12 lg:gap-16">
+      {experiences.map((exp, i) => (
+        <ExperienceCard key={i} experience={exp} index={i} />
+      ))}
+    </div>
+  </>
+);
 
 export default SectionWrapper(Experience, "work");

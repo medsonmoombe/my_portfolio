@@ -20,7 +20,7 @@ module.exports = {
         'mv': {'max': '767px'},
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/herobg.png')",
       },
     },
   },
